@@ -4,7 +4,7 @@ from asgiref.sync import sync_to_async
 from django.http import HttpRequest
 from ninja_jwt.authentication import JWTAuth
 
-from easy.main import EasyAdminAPI, EasyAPI
+from easy.main import EasyAPI
 
 from ninja_jwt.controller import NinjaJWTDefaultController
 
@@ -19,7 +19,7 @@ api_v1 = EasyAPI(
     easy_output=False,
 )
 
-api_admin_v1 = EasyAdminAPI(
+api_admin_v1 = EasyAPI(
     urls_namespace="admin_api",
     version="v1.0.0",
     auth=EasyJWTAuth(),
