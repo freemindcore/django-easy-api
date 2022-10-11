@@ -9,8 +9,8 @@ celery==5.2.7  # pyup: < 6.0  # https://github.com/celery/celery
 flower==1.2.0  # https://github.com/mher/flower
 uvicorn[standard]==0.18.3  # https://github.com/encode/uvicorn
 django-ninja==0.19.1
-django-ninja-extra==0.15.6
-django-api-framework==0.1.22
+django-ninja-extra-easy==0.15.6
+django-api-framework==0.1.25
 
 # Django
 # ------------------------------------------------------------------------------
