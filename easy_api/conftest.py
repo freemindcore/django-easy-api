@@ -12,9 +12,9 @@ def user(db) -> User:
     yield UserFactory()
 
 
-@pytest.fixture
-def user_factory() -> [User]:
-    def generate_users(count: int):
-        return [UserFactory() for i in range(count)]
-
-    yield generate_users
+# @pytest.fixture
+# def user_factory() -> [User]:
+#     def generate_users(count: int):
+#         return [UserFactory() for i in range(count)]
+#
+#     yield generate_users
