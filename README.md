@@ -1,6 +1,6 @@
 # DJANGO-EASY-API 
 A boilerplate Django REST API project for quickly getting started, easy, secure and fast.
-Based on django-api-framework -- a django-ninja/extra powered project.
+Based on [django-api-framework](https://github.com/freemindcore/django-api-framework) -- a django-ninja/extra powered project.
 
 ## Features
 -   Automatic CRUD API for all django models
