@@ -24,3 +24,7 @@ class User(AbstractUser):
 
         """
         return reverse("users:detail", kwargs={"username": self.username})
+
+    class ApiMeta:
+        model_recursive = True
+        model_join = True
