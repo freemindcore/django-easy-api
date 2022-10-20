@@ -298,17 +298,17 @@ SOCIALACCOUNT_FORMS = {"signup": "easy_api.users.forms.UserSocialSignupForm"}
 
 
 # API settings
-AUTO_ADMIN_ENABLED_ALL_APPS = env.bool("AUTO_ADMIN_ENABLED_ALL_APPS", default=True)
+CRUD_API_ENABLED_ALL_APPS = env.bool("CRUD_API_ENABLED_ALL_APPS", default=True)
 
-AUTO_ADMIN_INCLUDE_APPS = env.list(
-    "AUTO_ADMIN_APPS",
+CRUD_API_INCLUDE_APPS = env.list(
+    "CRUD_API_APPS",
     default=[
         "easy_api.users",
     ],
 )
 
-AUTO_ADMIN_EXCLUDE_APPS = env.list(
-    "AUTO_ADMIN_EXCLUDE_APPS",
+CRUD_API_EXCLUDE_APPS = env.list(
+    "CRUD_API_EXCLUDE_APPS",
     default=[
         "easy.api",
     ],
