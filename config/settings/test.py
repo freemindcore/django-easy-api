@@ -72,4 +72,4 @@ NINJA_EXTRA = {
     "THROTTLE_RATES": {"user": None, "anon": None},
 }
 
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default="*")
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["*"])
