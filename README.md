@@ -5,7 +5,7 @@ Based on [django-api-framework](https://github.com/freemindcore/django-api-frame
 ## Features
 -   Automatic CRUD API for all django models
 -   Async Django-Ninja APIs (with OpenAPI/Swagger docs)
--   For Django 3.2, Works with Python 3.9
+-   For Django 3.1+, Works with Python 3.8+
 -   Twitter [Bootstrap](https://github.com/twbs/bootstrap) v5
 -   [12-Factor](http://12factor.net/) based settings via [django-environ](https://github.com/joke2k/django-environ)
 -   Secure by default. We believe in SSL.
