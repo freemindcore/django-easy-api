@@ -21,6 +21,10 @@ Based on [django-api-framework](https://github.com/freemindcore/django-api-frame
 `make install
 `
 ### Start up
+`python manage.py runserver_plus`
+
+or 
+
 `uvicorn --reload config.asgi_local:application --lifespan off`
 
 ### Thanks 
