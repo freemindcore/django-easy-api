@@ -12,7 +12,7 @@ Based on [django-api-framework](https://github.com/freemindcore/django-api-frame
 -   Optimized development and production settings
 -   Registration via [django-allauth](https://github.com/pennersr/django-allauth)
 -   Comes with custom user model ready to go
--   Run tests with unittest or pytest
+-   Run tests with unittest or pytest: start with 100% coverage
 -   Default integration with [pre-commit](https://github.com/pre-commit/pre-commit) for identifying simple issues before submission to code review
 -   Configuration for [Celery](https://docs.celeryq.dev) and [Flower](https://github.com/mher/flower) (the latter in Docker setup only)
 -   Integration with [Sentry](https://sentry.io/welcome/) for error logging
@@ -26,6 +26,33 @@ Based on [django-api-framework](https://github.com/freemindcore/django-api-frame
 or 
 
 `uvicorn --reload config.asgi_local:application --lifespan off`
+
+### Unit test
+`make test-cov`
+
+```
+---------- coverage: platform darwin, python 3.8.10-final-0 ----------
+Name                                   Stmts   Miss  Cover
+----------------------------------------------------------
+easy_api/__init__.py                       2      0   100%
+easy_api/conftest.py                       8      0   100%
+easy_api/contrib/__init__.py               0      0   100%
+easy_api/contrib/sites/__init__.py         0      0   100%
+easy_api/users/__init__.py                 0      0   100%
+easy_api/users/adapters.py                11      0   100%
+easy_api/users/admin.py                   13      0   100%
+easy_api/users/apps.py                    10      0   100%
+easy_api/users/context_processors.py       3      0   100%
+easy_api/users/forms.py                   15      0   100%
+easy_api/users/models.py                  13      0   100%
+easy_api/users/tasks.py                    6      0   100%
+easy_api/users/urls.py                     4      0   100%
+easy_api/users/views.py                   27      0   100%
+----------------------------------------------------------
+TOTAL                                    112      0   100%
+
+```
+
 
 ### Thanks 
 Special thanks to cookiecutter-django for the great starter template
