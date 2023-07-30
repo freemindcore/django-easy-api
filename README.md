@@ -27,6 +27,7 @@ or
 
 `uvicorn --reload config.asgi_local:application --lifespan off`
 
+
 ### Unit test
 `make test-cov`
 
@@ -52,6 +53,15 @@ easy_api/users/views.py                   27      0   100%
 TOTAL                                    112      0   100%
 
 ```
+
+### You are all set!
+Visit http://127.0.0.1:8000 for your website.
+
+Visit http://127.0.0.1:8000/admin for your adminsite.
+
+Visit http://127.0.0.1:8000/api_admin/v1/docs for the automatic interactive API documentation (provided by Swagger UI).
+
+![image](https://github.com/freemindcore/django-easy-api/assets/5857025/880bd2ac-b1f7-4860-8a5e-9a9a514f0421)
 
 
 ### Thanks 
